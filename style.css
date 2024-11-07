@@ -1010,9 +1010,10 @@ footer {
 }
 
 .photos {
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
- gap: 0;
+      gap: 0;
     margin-top: 10px;
 }
 
@@ -1046,15 +1047,19 @@ footer {
 
 @media (max-width: 480px) {
     .inner4 h4 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .inner4 img {
-        width: 30%;
+        width: 50%;
     }
 
     .photos {
         grid-template-columns: repeat(3, 1fr);
+      
+    }
+    .photos img{
+        width: 100%;
     }
 }
 
