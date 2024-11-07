@@ -170,33 +170,35 @@ main {
     line-height: 1.5;
 }
 
-/* Media Query for tablet screens */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* Media Query for smaller screens */
+@media (max-width: 770px) {
     main {
-        height: 450px; /* Adjust height for tablets */
+        height: 270px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .onTop {
-        width: 80%; /* Increase the width of the overlay */
-        top: 50%; /* Center vertically */
-        transform: translate(-50%, -50%); /* Centering adjustment */
+        width: 90%;
+        top: 40%;
+        transform: translate(-50%, -40%);
     }
 
     .onTop h3 {
-        font-size: 280%; /* Adjust heading size */
+        font-size: 117.5%;
     }
 
     .onTop h1 {
-        font-size: 425%; /* Adjust heading size */
+        font-size: 175.5%;
     }
 
     .onTop p {
-        font-size: 88%; /* Adjust paragraph size */
+        font-size: 40%;
     }
 
     .onTop button {
-        width: 40%; /* Adjust button width */
-        margin: 10px 5%; /* Adjust margins */
+        width: 31%;
+        margin: 10px 0;
     }
 }
 

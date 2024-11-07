@@ -45,13 +45,16 @@ function showSlides(n) {
         const navLinks = document.getElementById('nav-links');
         navLinks.classList.toggle('show'); // Toggle the 'show' class
     }
-    document.querySelector('.register-btn').addEventListener('click', () => {
-      document.querySelector('.login').classList.add('hidden');
-      document.querySelector('.register').classList.remove('hidden');
-  });
-  
-  document.querySelector('.login-btn').addEventListener('click', () => {
-      document.querySelector('.register').classList.add('hidden');
-      document.querySelector('.login').classList.remove('hidden');
-  });
-  
+
+
+    const container = document.querySelector('.container');
+const registerbtn = document.querySelector('.register-btn');
+const loginbtn = document.querySelector('.login-btn');
+
+registerbtn.addEventListener('click', ()=>{
+    container.classList.add('active');
+});
+
+loginbtn.addEventListener('click', ()=>{
+    container.classList.remove('active');
+});
