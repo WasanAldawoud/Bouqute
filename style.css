@@ -147,7 +147,7 @@ main {
 
 /* Heading styles */
 .onTop h3 {
-    font-size: 542.5%;
+    font-size: 540.5%;
     font-family: var(--font-family-script);
     margin-bottom: 2px;
 }
@@ -156,49 +156,47 @@ main {
     font-family: var(--font-family-serif);
     font-weight: 600;
     font-style: italic;
-    font-size: 800.5%;
+    font-size: 790.5%;
     margin: 0;
 }
 
 /* Paragraph styles */
 .onTop p {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 125%;
+    font-size: 123%;
     font-weight: 500;
-    width: 85%;
+    width: 87%;
     margin: auto;
     line-height: 1.5;
 }
 
-/* Media Query for smaller screens */
-@media (max-width: 768px) {
+/* Media Query for tablet screens */
+@media (min-width: 768px) and (max-width: 1024px) {
     main {
-        height: 270px;
-        flex-direction: column;
-        align-items: center;
+        height: 450px; /* Adjust height for tablets */
     }
 
     .onTop {
-        width: 90%;
-        top: 40%;
-        transform: translate(-50%, -40%);
+        width: 80%; /* Increase the width of the overlay */
+        top: 50%; /* Center vertically */
+        transform: translate(-50%, -50%); /* Centering adjustment */
     }
 
     .onTop h3 {
-        font-size: 117.5%;
+        font-size: 280%; /* Adjust heading size */
     }
 
     .onTop h1 {
-        font-size: 175.5%;
+        font-size: 425%; /* Adjust heading size */
     }
 
     .onTop p {
-        font-size: 40%;
+        font-size: 88%; /* Adjust paragraph size */
     }
 
     .onTop button {
-        width: 35%;
-        margin: 10px 0;
+        width: 40%; /* Adjust button width */
+        margin: 10px 5%; /* Adjust margins */
     }
 }
 
