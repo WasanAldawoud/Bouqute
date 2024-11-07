@@ -41,3 +41,17 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+ function toggleMenu() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('show'); // Toggle the 'show' class
+    }
+    document.querySelector('.register-btn').addEventListener('click', () => {
+      document.querySelector('.login').classList.add('hidden');
+      document.querySelector('.register').classList.remove('hidden');
+  });
+  
+  document.querySelector('.login-btn').addEventListener('click', () => {
+      document.querySelector('.register').classList.add('hidden');
+      document.querySelector('.login').classList.remove('hidden');
+  });
+  
