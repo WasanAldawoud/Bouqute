@@ -18,7 +18,6 @@ body {
     background-color: var(--bg-color);
     font-family: var(--font-family-serif);
 }
-
 /* Navbar container */
 nav {
     margin: 0;
@@ -29,6 +28,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 /* Navbar styles */
@@ -68,30 +68,51 @@ nav .right a:hover {
 
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
-    .Container1, .Container2, .Container3, .Container4, .Container6, .Container7 {
-        width: 100%;
-    }
-
+    /* Make nav links hidden by default */
     nav .right ul {
         display: none;
         flex-direction: column;
         position: absolute;
         background-color: var(--navbar-bg);
         width: 100%;
-        top: 60px;
+        top: 50px;
         left: 0;
         z-index: 1;
+        padding: 12px 0; /* Adds padding around the dropdown */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transform: translateY(-20px); /* Starts slightly above for smooth animation */
+        opacity: 0; /* Hidden initially */
     }
 
+    /* Show menu when toggled */
     nav .right ul.show {
         display: flex;
+        transform: translateY(0);
+        opacity: 1;
     }
 
+    /* Toggle button for small screens */
     .toggle-menu {
         display: block;
         margin-left: 20px;
     }
+
+    /* Dropdown list item style for better spacing */
+    nav .right ul li {
+        margin: 10px 0;
+        width: 100%; /* Full width for easy clicking */
+        text-align: center; /* Center-align text */
+    }
+
+    /* Dropdown link padding */
+    nav .right ul li a {
+        padding: 6px 0;
+        display: block;
+        width: 100%;
+    }
 }
+
 
 /* Main content section */
 main {
@@ -1055,3 +1076,11 @@ footer {
 .social-icons a:hover {
     color: #8ea0b3;
 }
+
+
+
+
+
+
+
+

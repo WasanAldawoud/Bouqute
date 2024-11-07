@@ -1,4 +1,3 @@
-@import url("https://fonts-googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 *{
     margin: 0;
@@ -168,7 +167,7 @@ form{
     justify-content: center;
     align-items: center;
     z-index: 2;
-    transition: .6s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .toggle-panel.toggle-left{
