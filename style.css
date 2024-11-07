@@ -13,7 +13,6 @@
     --font-family-serif: 'Cormorant Garamond', serif;
     --font-family-script: 'Dancing Script', cursive;
 }
-
 /* General body style */
 body {
     background-color: var(--bg-color);
@@ -165,7 +164,7 @@ main {
     font-family: 'Courier New', Courier, monospace;
     font-size: 123%;
     font-weight: 500;
-    width: 87%;
+    width: 85%;
     margin: auto;
     line-height: 1.5;
 }
