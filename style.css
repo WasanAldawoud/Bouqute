@@ -78,7 +78,7 @@ nav .right a:hover {
         top: 50px;
         left: 0;
         z-index: 1;
-        padding: 12px 0; /* Adds padding around the dropdown */
+        padding: 1.2% 0; /* Converted padding */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
         transition: transform 0.3s ease, opacity 0.3s ease;
         transform: translateY(-20px); /* Starts slightly above for smooth animation */
@@ -95,24 +95,23 @@ nav .right a:hover {
     /* Toggle button for small screens */
     .toggle-menu {
         display: block;
-        margin-left: 20px;
+        margin-left: 2%; /* Converted margin-left */
     }
 
     /* Dropdown list item style for better spacing */
     nav .right ul li {
-        margin: 10px 0;
+        margin: 1% 0; /* Converted margin */
         width: 100%; /* Full width for easy clicking */
         text-align: center; /* Center-align text */
     }
 
     /* Dropdown link padding */
     nav .right ul li a {
-        padding: 6px 0;
+        padding: 0.6% 0; /* Converted padding */
         display: block;
         width: 100%;
     }
 }
-
 
 /* Main content section */
 main {
